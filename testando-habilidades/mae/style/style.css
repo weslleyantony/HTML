@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'RoseCake';
+    src: url('/fonts/RoseCake.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'SmileCake';
+    src: url('/fonts/Smilecake.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'CoffeCake';
+    src: url('/fonts/CoffeCake.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor1:#D4B5E8; 
+    --cor2:#9DA1EB;
+    --cor3:#BF86E5;
+    --cor4:#DC5EE6;
+    --cor5:#AD10EB;
+    --sombra: rgba(0, 0, 0, 0.3);
+
+
+    --fontetitulo: 'RoseCake';
+    --fontesubtitulo: 'SmileCake';
+    --fontemenu: 'CoffeCake';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+}
+/* ==========================  cabeçalho ========================== */
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor5));
+    min-height: 150px;
+}
+
+header h1 {
+    text-align: center;
+    color: var(--cor1);
+    font-family: var(--fontetitulo);
+    font-size: 6em;
+    text-shadow: 2px 0px 16px var(--sombra);
+    padding: 60px 10px 0px 10px;
+}
+
+header h2 {
+    color: var(--cor1);
+    text-align: center;
+    font-family: var(--fontesubtitulo);
+    font-size: 1.5em;
+    text-shadow: 2px 3px 5px var(--sombra);
+    padding: 0px 10px 10px 10px;
+
+}
+
+/* ============================  nav ============================ */
+
+nav {
+    max-height: 150px;
+    background-color: var(--cor5);
+    padding: 15px;
+}
+
+nav a {
+    color: var(--cor1);
+    text-decoration: none;
+    text-shadow: 1px 1px 5px var(--sombra);
+    font-weight: 500;
+    font-size: 1.5em;
+    font-family: var(--fontesubtitulo);
+    padding: 10px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--cor4);
+    background-color: var(--cor1);
+}
+
+/* ============================  main ============================ */
+
+main {
+    background-color: #BF86E5;
+    max-width: 800px;
+    min-height: 950px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px ;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px var(--sombra);
+    columns: 3;
+}
+
+main p {
+    text-indent: 30px;
+    text-align: justify;
+    padding: 10px;
+}
+
+main h2 {
+    color: var(--cor5);
+    text-shadow: 1px 1px 2px var(--sombra);
+    font-family: var(--fontetitulo);
+    font-size: 2.4em;
+    font-weight: normal;
+    padding: 10px;
+}
+
+/* ============================  footer ============================ */
+
+footer {
+    color: var(--cor1);
+    font-family: var(--fontetitulo);
+    font-size: 1.3em;
+    text-shadow: 1px 1px 4px var(--sombra);
+    text-align: center;
+    background-color: var(--cor5);
+    padding: 6px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+footer a:hover {
+    color: var(--cor3);
+}

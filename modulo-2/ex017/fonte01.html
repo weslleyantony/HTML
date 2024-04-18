@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /* Medidas absolutas
+            cm, mm, in(polegadas), px, pt, pc
+            
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+           
+
+            Recomendação oficial
+            usar EM ou então PX (preferindo sempre EM que seria % do tamanho original da fonte)  */
+
+           /* font-size: 1em;
+            font-weight: nromal;
+            font-style: italic;
+
+            text-decoration: underline;*/
+            /* lighter normal bold bolder */
+        }
+
+        h1 {
+            /* font-family: 'Work Sans' sans-serif;
+            font-weight: 900;
+            font-size: 3em;
+            font-style: italic;
+            *** shorthand font ***
+            
+            - font-style
+            - font-weight
+            - font-size
+            - font-family  */
+
+            font: italic 900 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: 900 2em'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nulla quia recusandae hic voluptate provident nobis dolores non veniam accusamus voluptas eligendi, iste accusantium, quos illum voluptatum maxime? Soluta, praesentium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quas aliquid cumque optio cum eaque maxime nobis facilis ratione. Eos temporibus labore vero non, illum ipsam unde cum eligendi quibusdam Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolores ullam natus culpa quae quam fuga dolor rem, numquam, officia corporis, molestias cum eum veritatis in? Culpa provident asperiores eaque!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis error voluptate ipsam tenetur quis quod accusantium, a voluptates veritatis laboriosam maxime ratione quaerat quisquam beatae, ex voluptatibus sed dolorem quae?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus velit corporis ipsum saepe adipisci quas ullam illo, harum, ipsam quod odit. Officiis mollitia perspiciatis nulla placeat cupiditate aperiam quibusdam.</p>
+</body>
+</html>

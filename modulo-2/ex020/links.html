@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred; /* links visitados */
+        }
+
+        a:hover {
+            color: black;
+            font-size: 18px /* links com mouse sobre */
+        }
+
+        a:active {
+            color: yellow; /* links clicando */
+        }
+
+        .especial {
+            background-color: rgb(255,140,140);
+        }
+
+        .especial::before {
+            content: '→ '; /* antes da escrita */
+        }
+
+        .especial::after {
+            content: ' ←'; /* depois da escrita */
+        } 
+
+        /* Pseudo-Elementos podem ser usados para mudar um conteúdo seja de ID ou então CLASS */
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a target="_blank" href="https://github.com/weslleyantony">Repositório do Github</a></li>
+        <li><a target="_blank" href="https://youtube.com/cursoemvideo" class="especial">Canal do Youtube</a></li>
+        <li><a target="_blank" href="https://www.cursoemvideo.com" class="especial">Site do Curso em Video</a></li>
+    </ul>
+    
+</body>
+</html>
