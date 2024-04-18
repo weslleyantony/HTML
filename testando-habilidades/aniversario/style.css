@@ -1,0 +1,51 @@
+body{
+    background-color: #337c79;
+}
+
+h1{
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #273f15;
+    font: bold 34px cursive;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    padding: 40px;
+    max-width: 550px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#txt{
+    font: bold 19px cursive;
+    color: #266462;
+    text-align: justify;
+    text-align: center;
+    text-shadow: 2px 2px 3px #7a8572;
+    margin-bottom: 20px;
+}
+
+#img{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#imagem{
+    border-radius: 20px;
+}
+
+#loveu{
+    font: bold 19px cursive;
+    color: #266462;
+    text-align: center;
+    text-shadow: 2px 2px 3px #7a8572;
+}
+
+#data{
+    font: bold 15px cursive;
+    font-style: italic;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #273f15;
+}
